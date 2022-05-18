@@ -1,6 +1,6 @@
 "# ptpmpt-22" 
 - git clone https://github.com/anhvuduc/ptpmpt-22.git
-- cd font_end
+- cd front_end
 - cd repair-motobike-shop
 - yarn install
 - yarn start
