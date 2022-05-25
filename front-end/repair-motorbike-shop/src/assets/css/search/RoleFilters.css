@@ -1,0 +1,50 @@
+.button-select-role{
+    width: 140px;
+    height: 34px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px;
+    cursor: pointer;
+    background: white;
+
+}
+.button-select-role > .title-select {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.button-select-role >.title-select> span{
+    display: inline-block;
+    font-size: 14px;
+}
+.button-select-role > .button-content-filters-role{
+    width: 170px;
+    height: 160px;
+    background: white;
+    position: absolute;
+    margin-top: 10px;
+    border: 1px solid #bbbbbb;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button-select-role:hover > .button-content-filters-role{
+    display: block;
+}
+.button-select-role > .button-content-filters-role > span{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.button-select-role > .button-content-filters-role > button{
+    background: white;
+    width: 45px;
+    height: 25px;
+    margin-top: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+.button-select-role > .button-content-filters-role > button:hover{
+    background: #fafafa;
+}

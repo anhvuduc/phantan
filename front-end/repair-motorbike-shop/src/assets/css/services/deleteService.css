@@ -1,0 +1,217 @@
+.list-delete-services {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    margin-top:-40px;
+}
+.list-delete-services > .title-delete-services{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-bottom: -10px;
+}
+.list-delete-services > .title-delete-services > .name-title{
+    width: 50%;
+}
+
+.list-delete-services > .title-delete-services  >.name-title> .button-cancel{
+    width: 70px;
+    height: 25px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+}
+.list-delete-services > .title-delete-services  >.name-title> .button-cancel:hover{
+    color: #8f8f8f;
+}
+
+.list-delete-services > .title-delete-services >.name-title > span{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.list-delete-services > .title-delete-services >.name-title> .name-list > span{
+    font-size: 25px;
+}
+
+
+.list-delete-services > .content-delete-services {
+    background: white;
+    min-height: 780px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    padding-bottom: 30px;
+
+}
+.list-delete-services > .content-delete-services> .filter{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.list-delete-services > .content-delete-services >.hight-table{
+    min-height: 600px;
+}
+
+.list-delete-services > .content-delete-services > .hight-table > .table{
+    width: 97.5%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.list-delete-services > .content-delete-services > .hight-table > .table > thead > tr{
+    width: 1170px;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > thead tr th input{
+    margin-left: 20px;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > thead tr th input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > thead tr th span{
+    margin-left: 20px;
+}
+.list-delete-services > .content-delete-services > .hight-table > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > tbody > tr > td > input{
+    margin-left: 20px;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > tbody > tr > .td-7{
+    width: 120px;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > tbody > tr > td > input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > tbody > tr > td span{
+    margin-left: 20px;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > tbody > tr > td button {
+    margin-left: 20px;
+}
+.list-delete-services > .content-delete-services> .hight-table > .table > tbody > tr > td .update{
+    border: 0px;
+    width: 50px;
+    border-radius: 5px;
+}
+.list-delete-services > .content-delete-services> .pagination-limit{
+    width: 100%;
+    display: flex;
+    z-index: 0;
+}
+.list-delete-services > .content-delete-services> .pagination-limit > .limit{
+    margin-top: 30px;
+    width: 15%;
+    margin-left: 5px;
+    display: flex;
+    z-index: 1;
+}
+.list-delete-services > .content-delete-services> .pagination-limit > .limit > span{
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.list-delete-services > .content-delete-services> .pagination-limit > .pagination{
+    margin:auto;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.list-delete-services > #warning-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-delete-services > #warning-modal.warning-modal{
+    display: block;
+}
+.list-delete-services > #warning-modal > #warning{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    background: white;
+    margin-left: 40%;
+    margin-top: 5%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.list-delete-services > #warning-modal > #warning.warning{
+    display: block;
+}
+.list-delete-services > #warning-modal > #warning> .title-warning{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.list-delete-services > #warning-modal > #warning> .title-warning > span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.list-delete-services > #warning-modal > #warning> .content-warning{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.list-delete-services > #warning-modal > #warning> .content-warning >.button-warning{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.list-delete-services > #warning-modal > #warning> .content-warning >.button-warning > .delete-permission{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.list-delete-services > #warning-modal > #warning> .content-warning >.button-warning > .back{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+.list-delete-services > #warning-modal > #warning> .content-warning >.button-warning > .back > span {
+    display: inline-block;
+    margin-top: 5px;
+}

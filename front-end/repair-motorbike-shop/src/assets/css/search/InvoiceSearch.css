@@ -1,0 +1,604 @@
+.search-employee > form > .search-invoice{
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: gray;
+    display: flex;
+    z-index: 0;
+ }
+ .search-employee > form > .search-invoice > .icon-search{
+     width: 30px;
+     height: 30px;
+ }
+ .search-employee > form > .search-invoice > input {
+     width: 450px;
+     height: 30px;
+     border-radius: 3px;
+     border: 0px;
+ }
+ .search-employee  > #info-employees{
+    width: 450px;
+    min-height: 10px;
+    position: absolute;
+    border: 1px solid #dddddd;
+    z-index: 1;
+    background: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 2px 2px #dddddd;
+    display: none;
+ }
+  .search-employee  > #info-employees.info-employees{
+     display: block;
+ }
+ .search-employee  > #info-employees > div > .name{
+     width: 450px;
+     line-height: 30px;
+     cursor: pointer;
+ }
+ .search-employee  > #info-employees >  .name{
+     color: #008aff;
+     cursor: pointer;
+ }
+
+ .search-employee  > #info-employees > div > .name > span{
+    display: inline-block;
+    margin-left: 20px;
+ }
+ .search-employee  > #info-employees > .name:hover{
+    color: white;
+    background: #008aff;
+}
+ .search-employee  > #info-employees > div > .name:hover{
+    background: #008aff;
+    color: white;
+ }
+
+
+
+
+ .search-employee  > #info-name {
+     z-index: 0;
+     border-top: 1px dotted #dddddd;
+     margin-top: 20px;
+     width: 540px;
+     min-height: 20px;
+     display: none;
+ }
+ .search-employee  > #info-name.info-name{
+    display: block;
+ }
+ .search-employee  > #info-name > .info{
+     margin-top: 10px;
+     width: 500px;
+     min-height: 20px;
+     margin-left: 30px;
+     font-size: 14px;
+     display: flex;
+ }
+ .search-employee  > #info-name > .info{
+     display: block;
+ }
+ .search-employee  > #info-name >  .info > .table{
+    width: 450px;
+    min-height: 70px;
+ }
+ .search-employee  > #info-name >  .info > .table > table > tr > th{
+     float: left;
+ }
+.search-employee  > #info-name >  .info > .delete-name{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 230px;
+}
+.search-employee  > #info-name >  .info > .delete-name span{
+    cursor: pointer;
+}
+.search-employee  > #info-name >  .info > .delete-name span:hover{
+    color: red;
+}
+.search-employee > #modal-employee{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.search-employee > #modal-employee.modal-employee{
+    display: block;
+}
+.search-employee > #modal-employee >#add-employee{
+    width: 500px;
+    height: 270px;
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-left: 650px;
+    margin-top: 50px;
+}
+.search-employee > #modal-employee >#add-employee > .title-add-employee{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px dotted #dddddd;
+}
+.search-employee > #modal-employee >#add-employee > .title-add-employee .name-title{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.search-employee > #modal-employee >#add-employee > .title-add-employee > .close-form-add-employee{
+    margin-left: 290px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.search-employee > #modal-employee >#add-employee > .title-add-employee > .close-form-add-employee:hover{
+    color: red;
+}
+.search-employee > #modal-employee >#add-employee > .content-add-employee{
+    width: 500px;
+    margin-top: 10px;
+}
+.search-employee > #modal-employee >#add-employee > .content-add-employee > form > .form-group-top{
+    width: 500px;
+    display: flex;
+}
+.search-employee > #modal-employee >#add-employee > .content-add-employee > form > .form-group-top > .form-group label{
+    color: black;
+    margin-left: 20px;
+}
+.search-employee > #modal-employee >#add-employee > .content-add-employee > form > .form-group-top > .form-group > .input-employee{
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    
+} 
+.search-employee > #modal-employee >#add-employee > .content-add-employee > form > .form-group-bot {
+    margin-top: 20px;
+}
+.search-employee > #modal-employee >#add-employee > .content-add-employee > form > .form-group-bot > label{
+    color: black;
+    margin-left: 20px;
+}
+.search-employee > #modal-employee >#add-employee > .content-add-employee > form > .form-group-bot > .input-employee{
+    width: 430px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+} 
+.search-employee > #modal-employee >#add-employee > .content-add-employee > .button-add-employee{
+    margin-top: 30px;
+    margin-left: 180px;
+    display: flex;
+}
+.btn-add{
+    width: 70px;
+    height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-pay{
+    width: 100px;
+    height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-out{
+    width: 68px;
+    height: 33px;
+    font-size: 14px;
+    border: 1px solid #008aff;
+    margin-left: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-out > span {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.search-customer > form > .search-invoice{
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: gray;
+    display: flex;
+    z-index: 0;
+ }
+ .search-customer > form > .search-invoice > .icon-search{
+     width: 30px;
+     height: 30px;
+ }
+ .search-customer > form > .search-invoice > input {
+     width: 450px;
+     height: 30px;
+     border-radius: 3px;
+     border: 0px;
+ }
+ .search-customer  > #info-customers{
+    width: 450px;
+    min-height: 10px;
+    position: absolute;
+    border: 1px solid #dddddd;
+    z-index: 1;
+    background: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 2px 2px #dddddd;
+    display: none;
+ }
+  .search-customer  > #info-customers.info-customers{
+     display: block;
+ }
+ .search-customer  > #info-customers > div > .license-plate{
+     width: 450px;
+     line-height: 30px;
+     cursor: pointer;
+ }
+ .search-customer  > #info-customers >  .license-plate{
+     color: #008aff;
+     cursor: pointer;
+ }
+
+ .search-customer  > #info-customers > div > .license-plate > span{
+    display: inline-block;
+    margin-left: 20px;
+ }
+ .search-customer  > #info-customers > .license-plate:hover{
+    color: white;
+    background: #008aff;
+}
+ .search-customer  > #info-customers > div > .license-plate:hover{
+    background: #008aff;
+    color: white;
+ }
+
+
+
+
+ .search-customer  > #info-license-plate {
+     z-index: 0;
+     border-top: 1px dotted #dddddd;
+     margin-top: 20px;
+     width: 540px;
+     min-height: 20px;
+     display: none;
+ }
+ .search-customer  > #info-license-plate.info-license-plate{
+    display: block;
+ }
+ .search-customer  > #info-license-plate > .info{
+     margin-top: 10px;
+     width: 500px;
+     min-height: 20px;
+     margin-left: 30px;
+     font-size: 14px;
+     display: flex;
+ }
+ .search-customer  > #info-license-plate > .info{
+     display: block;
+ }
+ .search-customer  > #info-license-plate >  .info > .table{
+    width: 450px;
+    min-height: 30px;
+ }
+ .search-customer  > #info-license-plate >  .info > .table > table > tr > th{
+     float: left;
+ }
+.search-customer  > #info-license-plate >  .info > .delete-license{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 200px;
+}
+.search-customer  > #info-license-plate >  .info > .delete-license span{
+    cursor: pointer;
+}
+.search-customer  > #info-license-plate >  .info > .delete-license span:hover{
+    color: red;
+}
+.search-customer > #modal-vehicle{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.search-customer > #modal-vehicle.modal-vehicle{
+    display: block;
+}
+.search-customer > #modal-vehicle >#add-vehicle{
+    width: 500px;
+    height: 270px;
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .title-add-customer{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px dotted #dddddd;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .title-add-customer .name-title{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .title-add-customer > .close-form-add-customer{
+    margin-left: 290px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .title-add-customer > .close-form-add-customer:hover{
+    color: red;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer{
+    width: 500px;
+    margin-top: 10px;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer > form > .form-group-top{
+    width: 500px;
+    display: flex;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer > form > .form-group-top > .form-group label{
+    color: black;
+    margin-left: 20px;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer > form > .form-group-top > .form-group > .input-customer{
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    
+} 
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer > form > .form-group-bot {
+    margin-top: 20px;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer > form > .form-group-bot > label{
+    color: black;
+    margin-left: 20px;
+}
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer > form > .form-group-bot > .input-customer{
+    width: 430px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+} 
+.search-customer > #modal-vehicle >#add-vehicle > .content-add-customer > .button-add-customer{
+    margin-top: 30px;
+    margin-left: 180px;
+    display: flex;
+}
+
+/* ================================== */
+
+#search-customer-vehicle{
+    display: none;
+}
+#search-customer-vehicle.search-customer-vehicle{
+    display: block;
+}
+#search-customer-vehicle > form > .search-invoice{
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: gray;
+    display: flex;
+    z-index: 0;
+ }
+#search-customer-vehicle > form > .search-invoice > .icon-search{
+     width: 30px;
+     height: 30px;
+ }
+#search-customer-vehicle > form > .search-invoice > input {
+     width: 450px;
+     height: 30px;
+     border-radius: 3px;
+     border: 0px;
+ }
+#search-customer-vehicle  > #info-customer-vehicle{
+    width: 450px;
+    min-height: 10px;
+    position: absolute;
+    border: 1px solid #dddddd;
+    z-index: 1;
+    background: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 2px 2px #dddddd;
+    display: none;
+ }
+#search-customer-vehicle  > #info-customer-vehicle.info-customer-vehicle{
+     display: block;
+ }
+ .search-customer-vehicle  > #info-customer-vehicle > div > .license-plate{
+     width: 450px;
+     line-height: 30px;
+     cursor: pointer;
+ }
+ #search-customer-vehicle  > #info-customer-vehicle >  .license-plate{
+     color: #008aff;
+     cursor: pointer;
+ }
+
+#search-customer-vehicle  > #info-customer-vehicle > div > .license-plate > span{
+    display: inline-block;
+    margin-left: 20px;
+ }
+#search-customer-vehicle  > #info-customer-vehicle > .license-plate:hover{
+    color: white;
+    background: #008aff;
+}
+#search-customer-vehicle  > #info-customer-vehicle > div > .license-plate:hover{
+    background: #008aff;
+    color: white;
+ }
+
+
+
+
+#search-customer-vehicle  > #info-customer {
+     z-index: 0;
+     border-top: 1px dotted #dddddd;
+     margin-top: 20px;
+     width: 540px;
+     min-height: 20px;
+     display: none;
+ }
+#search-customer-vehicle  > #info-customer.info-customer{
+    display: block;
+ }
+#search-customer-vehicle  > #info-customer > .info{
+     margin-top: 10px;
+     width: 500px;
+     min-height: 20px;
+     margin-left: 30px;
+     font-size: 14px;
+     display: flex;
+ }
+#search-customer-vehicle  > #info-customer > .info{
+     display: block;
+ }
+#search-customer-vehicle  > #info-customer >  .info > .table{
+    width: 450px;
+    min-height: 70px;
+ }
+#search-customer-vehicle  > #info-customer >  .info > .table > table > tr > th{
+     float: left;
+ }
+#search-customer-vehicle  > #info-customer>  .info > .delete-license{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 200px;
+}
+#search-customer-vehicle  > #info-customer >  .info > .delete-license span{
+    cursor: pointer;
+}
+#search-customer-vehicle  > #info-customer >  .info > .delete-license span:hover{
+    color: red;
+}
+#search-customer-vehicle > #modal-customer{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#search-customer-vehicle > #modal-customer.modal-customer{
+    display: block;
+}
+#search-customer-vehicle > #modal-customer >#add-customer{
+    width: 500px;
+    height: 270px;
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .title-add-customer{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px dotted #dddddd;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .title-add-customer .name-title{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .title-add-customer > .close-form-add-customer{
+    margin-left: 290px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .title-add-customer > .close-form-add-customer:hover{
+    color: red;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer{
+    width: 500px;
+    margin-top: 10px;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer > form > .form-group-top{
+    width: 500px;
+    display: flex;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer > form > .form-group-top > .form-group label{
+    color: black;
+    margin-left: 20px;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer > form > .form-group-top > .form-group > .input-customer{
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    
+} 
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer > form > .form-group-bot {
+    margin-top: 20px;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer > form > .form-group-bot > label{
+    color: black;
+    margin-left: 20px;
+}
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer > form > .form-group-bot > .input-customer{
+    width: 430px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+} 
+#search-customer-vehicle > #modal-customer >#add-customer > .content-add-customer > .button-add-customer{
+    margin-top: 30px;
+    margin-left: 180px;
+    display: flex;
+}

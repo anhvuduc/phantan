@@ -1,0 +1,71 @@
+.search-service > form > .search-invoice{
+    width: 490px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: gray;
+    display: flex;
+ }
+.search-service > form > .search-invoice > .icon-search{
+    width: 30px;
+    height: 30px;
+}
+.search-service > form > .search-invoice > input {
+    width: 440px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px;
+}
+.search-service > form > .search-invoice > .choose-services{
+    width: 50px;
+    height: 30px;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    border-left: 1px solid #dddddd;
+}
+.search-service > form > .search-invoice > .choose-services > span{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+.search-service > form > .search-invoice > .choose-services > span:hover{
+    color: #008aff;
+}
+.search-service > #info-service{
+    position: absolute;
+    z-index: 2;
+    margin-top: 5px;
+    width: 490px;
+    min-height: 50px;
+    margin-left: 20px;
+    border-bottom: 1px solid #dddddd;
+    display: none;
+}
+.search-service > #info-service.info-service{
+    display: block;
+}
+.search-service > #info-service > div > .info-detail{
+    width: 490px;
+    min-height: 50px;
+    border: 1px solid #dddddd;
+    border-bottom: 0px;
+    cursor: pointer;
+    background: white;
+}
+.search-service > #info-service > div > .info-detail:hover{
+    background: #008aff;
+    color: white;
+}
+.search-service > #info-service > div > .info-detail > table {
+    font-size: 14px;
+    width: 480px;
+}
+.search-service > #info-service > div > .info-detail > table > tr > .td-1{
+    float: left;
+    margin-left: 10px;
+}
+.search-service > #info-service > div > .info-detail > table > tr > .td-2{
+    float: right;
+}

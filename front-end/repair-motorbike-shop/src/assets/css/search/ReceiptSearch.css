@@ -1,0 +1,183 @@
+.search-material > form > .search-receipt{
+    width: 490px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: gray;
+    display: flex;
+    z-index: 0;
+ }
+ .search-material > form > .search-receipt > .icon-search{
+     width: 30px;
+     height: 30px;
+ }
+ .search-material > form > .search-receipt > input {
+     width: 1050px;
+     height: 30px;
+     border-radius: 3px;
+     border: 0px;
+ }
+ .search-material  > #info-material > .material{
+     width: 490px;
+     height: 50px;
+     background: white;
+     border: 1px solid #dddddd;
+     border-bottom: 0px;
+     cursor: pointer;
+     
+ }
+ .search-material  > #info-material > .material:hover{
+     background: #008aff;
+     color: white;
+ }
+ .search-material  > #info-material > .material > .button-add-materials{
+     display: inline-block;
+     margin-left: 10px;
+     margin-top: 12px;
+ }
+
+ .search-material  > #info-material > .info{
+     margin-top: 10px;
+     width: 490px;
+     min-height: 20px;
+     margin-left: 30px;
+     font-size: 14px;
+     display: flex;
+ }
+ .search-material  > #info-material> .info{
+     display: block;
+ }
+ .search-material  > #info-material>  .info > .table{
+    width: 1000px;
+    min-height: 70px;
+ }
+ .search-material  > #info-material >  .info > .table > table > tr > th{
+     float: left;
+ }
+.search-material  > #info-material >  .info > .delete-license{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 1000px;
+}
+.search-material  > #info-material >  .info > .delete-license span{
+    cursor: pointer;
+}
+.search-material  > #info-material >  .info > .delete-license span:hover{
+    color: red;
+}
+.search-material > #modal-material{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.search-material > #modal-material.modal-material{
+    display: block;
+}
+.search-material > #modal-material >#add-material{
+    width: 600px;
+    height: 370px;
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.search-material > #modal-material >#add-material > .title-add-material{
+    width: 600px;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px dotted #dddddd;
+}
+.search-material > #modal-material >#add-material > .title-add-material .name-title{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.search-material > #modal-material >#add-material > .title-add-material > .close-form-add-material{
+    margin-left: 410px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.search-material > #modal-material >#add-material > .title-add-material > .close-form-add-material:hover{
+    color: red;
+}
+.search-material > #modal-material >#add-material > .content-add-material{
+    width: 600px;
+    margin-top: 10px;
+}
+.search-material > #modal-material >#add-material > .content-add-material > form > .form-group-top{
+    width: 600px;
+    display: flex;
+}
+.search-material > #modal-material >#add-material > .content-add-material > form > .form-group-top > .form-group label{
+    color: black;
+    margin-left: 20px;
+}
+.search-material > #modal-material >#add-material > .content-add-material > form > .form-group-top > .form-group{
+    margin-left: 5px;
+}
+.search-material > #modal-material >#add-material > .content-add-material > form > .form-group-top > .form-group > .input-material{
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    
+} 
+.search-material > #modal-material >#add-material > .content-add-material > form > .form-group-bot {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.search-material > #modal-material >#add-material > .content-add-material > form > .form-group-bot > label{
+    color: black;
+    margin-left: 0px;
+}
+.search-material > #modal-material >#add-material > .content-add-material > form > .form-group-bot > .input-material{
+    max-width: 535px;
+    max-height: 60px;
+    min-width: 535px;
+    min-height: 60px;
+    padding-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+} 
+.search-material > #modal-material >#add-material > .content-add-material > .button-add-material{
+    margin-top: 30px;
+    margin-left: 230px;
+    display: flex;
+}
+.btn-add{
+    width: 70px;
+    height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-out{
+    width: 68px;
+    height: 33px;
+    font-size: 14px;
+    border: 1px solid #008aff;
+    margin-left: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-out > span {
+    display: inline-block;
+    margin-top: 5px;
+}

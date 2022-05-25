@@ -1,0 +1,26 @@
+div > #page-numbers{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+div > #page-numbers  button:not(.active):hover {
+    background: #008aff;
+    color: white;
+}
+div > #page-numbers > li{
+    border-radius: 100px;
+    margin-left: 10px;
+}
+div > #page-numbers > li button{
+    width: 25px;
+    height: 25px;
+    border: 0px;
+    border-radius: 100px;
+    cursor: pointer;
+}
