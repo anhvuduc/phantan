@@ -1,0 +1,569 @@
+.list-vehicle {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    margin-top:-20px;
+}
+.list-vehicle > .title-vehicle{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-bottom: -30px;
+}
+.list-vehicle > .title-vehicle > .name-title{
+    width: 50%;
+}
+
+.list-vehicle > .title-vehicle  >.name-title> .button-cancel{
+    width: 70px;
+    height: 25px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+}
+.list-vehicle > .title-vehicle  >.name-title> .button-cancel:hover{
+    color: #8f8f8f;
+}
+
+.list-vehicle > .title-vehicle >.name-title > span{
+    font-size: 25px;
+}
+
+.list-vehicle > .title-vehicle >.name-title> .name-list > span{
+    font-size: 25px;
+}
+
+.list-vehicle > .title-vehicle > .add-new-vehicle{
+    width: 50%;
+}
+.list-vehicle > .title-vehicle > .add-new-vehicle > .button-add{
+    float: right;
+    width: 120px;
+    line-height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.list-vehicle > .title-vehicle > .add-new-vehicle > .button-add:hover{
+    background: #64aff1;
+}
+
+.list-vehicle > .content-vehicle {
+    background: white;
+    min-height: 780px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    padding-bottom: 30px;
+
+}
+.list-vehicle > .content-vehicle > #modal-vehicle{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-vehicle > .content-vehicle > #modal-vehicle.modal-vehicle{
+    display: block;
+}
+.list-vehicle > .content-vehicle> #modal-vehicle > .create-vehicle{
+    width: 400px;
+    height: 340px;
+    background: white;
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle > .title-add-vehicle{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle > .title-add-vehicle >  .title-vehicle > span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 75px;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle > .title-add-vehicle > .title-vehicle{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle > .title-add-vehicle > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle > .title-add-vehicle > .close{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle  > .content-vehicle{
+   width: 300px;
+   height: 200px; 
+   cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle  > .content-vehicle > .form-group{
+    width: 300px;
+    height: 70px;
+    margin-left: 30px;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle  > .content-vehicle > .form-group > .form-control{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-vehicle > .content-vehicle> #modal-vehicle > .create-vehicle  > .content-vehicle > .form-group > label{
+    margin-left: 10px;
+    color: #525050;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle  > .content-vehicle > .form-group > .form-control-area{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 70px;
+    max-height: 70px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle  > button{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-vehicle > .create-vehicle  > button:hover{
+    background: #51a8f5;
+}
+
+.list-vehicle > .content-vehicle > #modal-list-customer{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-vehicle > .content-vehicle > #modal-list-customer.modal-list-customer{
+    display: block;
+}
+.list-vehicle > .content-vehicle> #modal-list-customer > .create-list-customer{
+    width: 600px;
+    min-height: 150px;
+    background: white;
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer > .title-add-list-customer{
+    width: 600px;
+    height: 50px;
+    margin-left: 135px;
+    display: flex;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer > .title-add-list-customer >  .title-list-customer > span{
+    font-size: 20px;
+    margin-left: 4px;
+    display: inline-block;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer > .title-add-list-customer > .title-list-customer{
+    width: 550px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer > .title-add-list-customer > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer > .title-add-list-customer > .close{
+    margin-top: 10px;
+    margin-left: -125px;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer{
+   width: 550px;
+   margin-left: 20px;
+   cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table{
+    min-height: 100px; 
+    padding-bottom: 30px;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list-vehicle > .content-vehicle> #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > thead > tr{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > thead tr th span{
+    margin-left: 10px;
+}
+
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > tbody > tr > .td-1{
+    width: 10%;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > tbody > tr > .td-2{
+    width: 30%;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > tbody > tr > .td-3{
+    width: 30%;
+}
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > tbody > tr > .td-4{
+    width: 30%;
+}
+
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+
+.list-vehicle > .content-vehicle > #modal-list-customer > .create-list-customer  > .content-list-customer > .hight-table > .table > tbody > tr > td span{
+    margin-left: 10px;
+}
+
+.list-vehicle > .content-vehicle> .filter{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+    
+}
+.list-vehicle > .content-vehicle> .filter > .action{
+    max-width: 610px;
+    height: 35px;
+    display: flex;
+    border-bottom: 1px solid #dddddd ;
+    margin-left: 50px;
+    margin-top: 12px;
+    background: white;
+    
+}
+.list-vehicle > .content-vehicle> .filter > .action > .select{
+    width: 140px;
+    
+}
+.list-vehicle > .content-vehicle> .filter > .action > .select:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle{
+    display: flex;
+    min-width: 140px;
+    height: 35px;
+
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-action{
+    width: 170px;
+    height: 35px;
+    border: 0px;
+    cursor: pointer;
+    background: white;
+    color: #525050;
+    font-size: 14px;
+    
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-action:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-other{
+    width: 120px;
+    height: 35px;
+    background: white;
+    color: #525050;
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: -1px;
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-other:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-other > .title-button{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 34px;
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-other > #content-button{
+    width: 120px;
+    min-height: 35px;
+    margin-top: 10px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-other > #content-button.content-button{
+    display: block;
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-other > #content-button > .button-action{
+    width: 120px;
+    height: 35px;
+    background: white;
+    border: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    color: #525050;
+}
+.list-vehicle > .content-vehicle> .filter > .action > .add-vehicle > .button-other > #content-button > .button-action:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+
+.list-vehicle > .content-vehicle >.hight-table{
+    min-height: 600px;
+}
+
+.list-vehicle > .content-vehicle > .hight-table > .table{
+    width: 97.5%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.list-vehicle > .content-vehicle > .hight-table > .table > thead > tr{
+    width: 1170px;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > thead tr th input{
+    margin-left: 20px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > thead tr th input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > thead tr th span{
+    margin-left: 20px;
+}
+.list-vehicle > .content-vehicle > .hight-table > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > td > input{
+    margin-left: 20px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-1{
+    width: 100px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-2{
+    width: 100px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-3{
+    width: 200px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-4{
+    width: 200px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-6{
+    width: 200px;
+}
+
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-7{
+    width: 100px;
+}
+
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-6 > button{
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    background-color: white;
+    font-style: italic;
+    text-decoration: underline;
+    margin-left: -10px;
+}
+
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-6 > button:hover{
+    color: #8f8f8f;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > .td-7{
+    width: 50px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > td > input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > td span{
+    margin-left: 20px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > td button {
+    margin-left: 20px;
+}
+.list-vehicle > .content-vehicle> .hight-table > .table > tbody > tr > td .update{
+    border: 0px;
+    width: 50px;
+    border-radius: 5px;
+}
+.list-vehicle > .content-vehicle> .pagination-limit{
+    width: 100%;
+    display: flex;
+    z-index: 0;
+}
+.list-vehicle > .content-vehicle> .pagination-limit > .limit{
+    margin-top: 30px;
+    width: 15%;
+    margin-left: 5px;
+    display: flex;
+    z-index: 1;
+
+}
+.list-vehicle > .content-vehicle> .pagination-limit > .limit > span{
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.list-vehicle > .content-vehicle> .pagination-limit > .pagination{
+    margin:auto;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.list-vehicle > .content-vehicle > #modal-customer{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-vehicle > .content-vehicle > #modal-customer.modal-customer{
+    display: block;
+}
+.list-vehicle > .content-vehicle> #modal-customer > .create-vehicle{
+    width: 400px;
+    height: 340px;
+    background: white;
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle > .title-add-vehicle{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle > .title-add-vehicle >  .title-vehicle > span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 75px;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle > .title-add-vehicle > .title-vehicle{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle > .title-add-vehicle > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle > .title-add-vehicle > .close{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle  > .content-vehicle{
+   width: 300px;
+   height: 200px; 
+   cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle  > .content-vehicle > .form-group{
+    width: 300px;
+    height: 70px;
+    margin-left: 30px;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle  > .content-vehicle > .form-group > .form-control{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-vehicle > .content-vehicle> #modal-customer > .create-vehicle  > .content-vehicle > .form-group > label{
+    margin-left: 10px;
+    color: #525050;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle  > .content-vehicle > .form-group > .form-control-area{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 70px;
+    max-height: 70px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle  > button{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.list-vehicle > .content-vehicle > #modal-customer > .create-vehicle  > button:hover{
+    background: #51a8f5;
+}

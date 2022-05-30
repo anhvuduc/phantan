@@ -1,0 +1,619 @@
+.body-edit-invoice{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+.body-edit-invoice > .title-add-invoice {
+    width: 1100px;
+    height: 100px;
+    margin-left: 50px;
+    display: flex;
+}
+.body-edit-invoice > .title-add-invoice >.left-title-add-invoice{
+    width: 1100px;
+}
+.body-edit-invoice > .title-add-invoice >.left-title-add-invoice > .back > .cancel-button{
+    width: 100px;
+    height: 30px;
+    color: gray;
+    cursor: pointer;
+    border: 0px;
+    margin-left: -18px;
+}
+.body-edit-invoice > .title-add-invoice >.left-title-add-invoice > .back > .cancel-button > span{
+    font-size: 20px;
+}
+.body-edit-invoice > .title-add-invoice  >.left-title-add-invoice > .name-page{
+    margin-top: 20px;
+}
+.body-edit-invoice > .title-add-invoice  >.left-title-add-invoice > .name-page > span{
+    display: inline-block;
+    font-size: 30px;
+}
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice {
+    margin-top: 50px;
+    display: flex;
+}
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > .btn-add{
+    margin-left: 10px;
+}
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > .btn-add:hover{
+    background: rgb(80, 190, 241);
+}
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > #btn-comfirm{
+    background: white;
+    border: 1px solid rgb(77, 139, 255);
+    color: rgb(77, 139, 255);
+    width: 85px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+} 
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > #btn-comfirm.btn-comfirm{
+    display: block;
+}
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > #btn-comfirm:hover{
+    background: #eeeeee;
+    
+} 
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > #btn-finish{
+    background: white;
+    border: 1px solid rgb(77, 139, 255);
+    color: rgb(77, 139, 255);
+    width: 85px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+} 
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > #btn-finish.btn-finish{
+    display: block;
+}
+.body-edit-invoice > .title-add-invoice  >.right-title-add-invoice > #btn-finish:hover{
+    background: #eeeeee;
+} 
+.body-edit-invoice > #warning-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.body-edit-invoice> #warning-modal.warning-modal{
+    display: block;
+}
+.body-edit-invoice > #warning-modal > #warning{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    background: white;
+    margin-left: 40%;
+    margin-top: 2%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.body-edit-invoice > #warning-modal > #warning.warning{
+    display: block;
+}
+.body-edit-invoice > #warning-modal > #warning> .title-warning{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.body-edit-invoice> #warning-modal > #warning> .title-warning > span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.body-edit-invoice > #warning-modal > #warning> .content-warning{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.body-edit-invoice > #warning-modal > #warning> .content-warning >.button-warning{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.body-edit-invoice > #warning-modal > #warning> .content-warning >.button-warning > .delete-permission{
+    width: 85px;
+    height: 36px;
+    border: 1px solid #3ea2f3;
+    border-radius: 4px;
+    background: #3ea2f3;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.body-edit-invoice > #warning-modal > #warning> .content-warning >.button-warning > .back{
+    width: 65px;
+    height: 35px;
+    border: 1px solid #3ea2f3;
+    border-radius: 4px;
+    background: white;
+    color: #3ea2f3;
+    cursor: pointer;
+    text-align: center;
+}
+.body-edit-invoice > #warning-modal > #warning> .content-warning >.button-warning > .back > span {
+    display: inline-block;
+    margin-top: 5px;
+}
+.body-edit-invoice > #warning-modal-finish{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.body-edit-invoice> #warning-modal-finish.warning-modal-finish{
+    display: block;
+}
+.body-edit-invoice > #warning-modal-finish > #warning-finish{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    background: white;
+    margin-left: 600px;
+    margin-top: -40px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.body-edit-invoice > #warning-modal-finish > #warning-finish.warning-finish{
+    display: block;
+}
+.body-edit-invoice > #warning-modal-finish > #warning-finish> .title-warning{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.body-edit-invoice> #warning-modal-finish > #warning-finish> .title-warning > span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.body-edit-invoice > #warning-modal-finish > #warning-finish> .content-warning{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.body-edit-invoice > #warning-modal-finish > #warning-finish> .content-warning >.button-warning{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.body-edit-invoice > #warning-modal-finish > #warning-finish> .content-warning >.button-warning > .delete-permission{
+    width: 75px;
+    height: 35px;
+    border: 1px solid #3ea2f3;
+    border-radius: 4px;
+    background: #3ea2f3;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.body-edit-invoice > #warning-modal-finish > #warning-finish> .content-warning >.button-warning > .back{
+    width: 65px;
+    height: 35px;
+    border: 1px solid #3ea2f3;
+    border-radius: 4px;
+    background: white;
+    color: #3ea2f3;
+    cursor: pointer;
+    text-align: center;
+}
+.body-edit-invoice > #warning-modal-finish > #warning-finish> .content-warning >.button-warning > .back > span {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+.body-edit-invoice > .content-add-invoice{
+    width: 1100px;
+    margin-left: 50px;
+}
+.body-edit-invoice > .content-add-invoice > .top-invoice{
+    width: 1100px;
+    min-height: 100px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+.body-edit-invoice > .content-add-invoice > .top-left-invoice{
+    width: 540px;
+    min-height: 300px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+.body-add-invoice > .content-add-invoice > .top-left-invoice > .content-customer > .search-customer-vehicle{
+    width: 540px;
+    min-height: 100px;
+}
+
+
+
+
+
+.body-edit-invoice > .content-add-invoice > .top-left-invoice > .title-customer{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.body-edit-invoice > .content-add-invoice > .top-right-invoice{
+    width: 540px;
+    margin-top: -302px;
+    float: right;
+    height: 300px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+
+.body-edit-invoice > .content-add-invoice > .top-right-invoice > .title-employee{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.body-edit-invoice > .content-add-invoice > .main-invoice{
+    width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    z-index: 0;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice{
+    width: 1100px;
+    min-height: 300px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .title-material {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material{
+    width: 1100px;
+    height: 100px;
+    
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .top-content{
+    width: 1100px;
+    
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content{
+    width: 1100px;
+    min-height: 100px;
+    margin-top: 20px;
+    z-index: 0;
+    margin-bottom: 20px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table {
+    width: 1100px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table {
+    width: 1100px;
+    font-size: 12px;
+    background: white;
+    border-collapse: collapse;  
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr{
+    height: 30px;
+    background: #e6f9fa;
+    font-size: 12px;
+    font-weight: 500;
+    border: 0px;
+
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > th > span{
+    display: inline-block;
+    margin-left: -15px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr{
+    border-bottom: 1px solid #dddddd;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > td > span{
+    display: inline-block;
+   
+}
+
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr{
+    font-weight: bold;
+    height: 40px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .th-1{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .th-2{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .th-6{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .th-3{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr {
+    border-bottom: 1px solid #dddddd;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr span{
+    margin-left: 50px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .th-4{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .th-5{
+    width: 100px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-1{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-2{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-6{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-3{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-3 > span > input{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    text-align: right;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-4{
+    width: 200px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-5{
+    width: 100px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr span{
+    margin-left: 50px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr{
+    height: 50px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-material > span{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 70px;
+    
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-service > span{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 70px;
+    
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-service > span:hover{
+    color: red;
+}
+
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-material > span:hover{
+    color: red;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .bottom-content{
+    width: 1100px;
+    min-height: 50px;
+    z-index: 0;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .bottom-content > .total{
+    
+    float: right;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .bottom-content > .total > table{
+    min-width: 200px;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+
+
+
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice{
+    width: 540px;
+    min-height: 300px;
+    background: white;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    z-index: 0;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice> .title-service {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice> .content-service{
+    width: 540px;
+    height: 100px;
+    
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .top-content{
+    width: 540px;
+    
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content{
+    width: 540px;
+    min-height: 100px;
+    margin-top: 20px;
+    z-index: 0;
+    margin-bottom: 20px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table {
+    width: 540px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table > table {
+    width: 540px;
+    font-size: 12px;
+    background: white;
+    border-collapse: collapse;  
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice> .content-service > .main-content > .table > table > thead > tr{
+    height: 30px;
+    background: #e6f9fa;
+    font-size: 12px;
+    font-weight: 500;
+    border: 0px;
+    border-bottom: 1px solid #e6f9fa;
+    border-top: 1px solid #e6f9fa;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table > table > thead > tr > th > span{
+    display: inline-block;
+    margin-left: -15px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table > table > tbody > tr{
+    border-bottom: 1px solid #dddddd;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table > table > tbody > tr > td > span{
+    display: inline-block;
+    margin-left: 20px;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table > table > tbody > tr > td > input{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    text-align: right;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table > table > tbody > tr > .input{
+    text-align: center;
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .main-content > .table > table > thead > tr > .th-5{
+    width: 20px;
+}
+
+
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .bottom-content{
+    width: 540px;
+    min-height: 50px;
+    border-top: 1px solid #dddddd;
+    z-index: 0;
+    
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .bottom-content > .total{
+    float: right;
+
+}
+.body-edit-invoice > .content-add-invoice > .main-invoice > .right-invoice > .content-service > .bottom-content > .total > table{
+    min-width: 200px;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+
+
+.body-edit-invoice > .content-add-invoice > .bottom-invoice{
+    width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    z-index: -1;
+    
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .left-invoice{
+    width: 300px;
+    min-height: 200px;
+    background: white;
+    margin-bottom: 100px;
+
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .left-invoice .note-invoice{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .left-invoice .note-invoice label{
+    color: black;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .left-invoice > .note-invoice > textarea{
+    margin-top: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 130px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice{
+    width: 780px;
+    margin-left: 20px;
+    min-height:  200px;
+    background: white;
+    margin-bottom: 100px;
+    
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .title-right-invoice{
+    width: 780px;
+    height: 40px;
+    border-bottom: 1px solid #dddddd;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .title-right-invoice > span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice {
+    display: flex;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method{
+   width: 380px;
+   min-height:  150px;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method > .title-pay-method{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method > .content-pay-method{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method > .content-pay-method >form > .pay-method-group > label{
+    color: black;
+}
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay{
+    width: 400px;
+    min-height:  150px;
+ }
+ .body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay > table{
+    margin-top: 50px; 
+    width: 300px;
+    font-size: 13px;
+ }
+ .body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay > table >tr> th{
+    float: left;
+ }
+.body-edit-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay > table > .total> th, .total-td{
+    color: red;
+}

@@ -1,0 +1,69 @@
+.body-timesheet-excel{
+    width: 1200px;
+    margin: auto;
+}
+.body-timesheet-excel > .add-new-category{
+    width: 1000px;
+    height: 250px;
+    background: white;
+    margin: auto;
+    color: black;
+    border-radius: 5px;
+}
+.body-timesheet-excel > .add-new-category .title{
+    width: 1000px;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+.body-timesheet-excel > .add-new-category .title span{
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.body-timesheet-excel > .add-new-category > .card-body .group{
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.body-timesheet-excel > .add-new-category > .card-body .group .group-main{
+    margin-left: 50px;
+    margin-left: 300px;
+}
+.body-timesheet-excel > .add-new-category > .card-body .group .group-main .form-group > input{
+    width: 380px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+}
+.body-timesheet-excel > .add-new-category > .card-body .group .group-main .form-group{
+    margin-bottom: 10px;
+}
+.body-timesheet-excel > .add-new-category > .card-body > form > .form-group{
+    margin-left: 400px;
+    margin-top: 10px;
+}
+.body-timesheet-excel > .add-new-category > .card-body > .info-user{
+    width: 200px;
+    margin-left: 50px;
+}
+.body-timesheet-excel > .add-new-category > .card-body > .info-user > table > tr >th{
+    float: left;
+}
+.body-timesheet-excel label{
+    color: black;
+    margin-left: 10px;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 330px;
+    border: 0px;
+    border-radius: 3px;
+}
+.btn-success{
+    background: #008aff;
+}

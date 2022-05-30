@@ -1,0 +1,148 @@
+.body-edit-employees{
+    width: 1000px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.body-edit-employees > .title-employees{
+    width: 985px;
+    height: 50px;
+    margin: auto;
+    margin-left: 15px;
+}
+.body-edit-employees > .title-employees > .button-cancel{
+    width: 70px;
+    height: 25px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+}
+.body-edit-employees > .title-employees > .button-cancel:hover{
+    color: #8f8f8f;
+}
+.body-edit-employees > .title-employees > .button-add{
+    float: right;
+    width: 120px;
+    line-height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: -20px;
+}
+.body-edit-employees .top{
+    width: 1000px;
+    display: flex;
+}
+
+.body-edit-employees > .top > .add-edit-employee{
+    width: 1000px;
+    height: 550px;
+    background: white;
+    margin: auto;
+    color: black;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #dddddd;
+}
+.body-edit-employees> .top  > .add-edit-employee .title{
+    width: 1000px;;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+.body-edit-employees> .top  > .add-edit-employee .title span{
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.body-edit-employees> .top  > .add-edit-employee > .card-body .group{
+    width: 600px;;
+    margin-top: 20px;
+}
+
+.body-edit-employees> .top  > .add-edit-employee > .card-body .group .group-main{
+    margin-left: 70px;
+}
+.body-edit-employees> .top  > .add-edit-employee > .card-body .group .group-main .form-group > input{
+    width: 380px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+}
+.body-edit-employees> .top  > .add-edit-employee > .card-body .group .group-main .form-group{
+    margin-bottom: 10px;
+}
+.body-edit-employees> .top  > .add-edit-employee > .card-body > form > .form-group{
+    margin-left: 400px;
+    margin-top: 10px;
+}
+.body-edit-employees> .top  > .add-edit-employee  label{
+    color: black;
+    margin-left: 10px;
+}
+.body-edit-employees> .top  > .add-edit-employee  .btn{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 150px;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.body-edit-employees> .top  > .add-edit-employee  .btn-success{
+    background: #008aff;
+    color: white;
+}
+.body-edit-employees> .top  > .add-edit-employee .btn-danger{
+    border: 1px solid #008aff;
+    background: white;
+    color: #008aff;
+}
+
+.body-edit-employees> .top  > .add-edit-employee > .info-employee {
+    margin-top: -360px;
+    margin-left: 480px;
+}
+
+
+.body-edit-employees> .top  > .add-edit-employee > .info-employee > .title{
+    width: 550px;
+    height: 60px;
+    border-bottom: 1px solid black ;
+}
+.body-edit-employees> .top  > .add-edit-employee > .info-employee > .title > .span-1 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.body-edit-employees> .top  > .add-edit-employee > .info-employee > .title > .span-2{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 13px;
+}
+.body-edit-employees> .top  > .add-edit-employee > .info-employee > .content{
+    width: 550px;
+    height: 480px;
+    margin-top: 10px;
+}
+.body-edit-employees> .top  > .add-edit-employee > .info-employee > .content .info-group{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.body-edit-employees> .top  > .add-edit-employee > .info-employee > .content .info-group > .info-detail{
+    width: 380px;
+    padding-left:20px ;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #008aff;
+}
+.body-edit-employees > .top > .add-edit-employee > .info-employee  label{
+    color: black;
+} 

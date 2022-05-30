@@ -1,0 +1,312 @@
+.list-customers {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    margin-top:-40px;
+}
+.list-customers > .title-customers{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-bottom: -10px;
+}
+.list-customers > .title-customers > .name-title{
+    width: 50%;
+}
+
+.list-customers > .title-customers  >.name-title> .button-cancel{
+    width: 70px;
+    height: 25px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+}
+.list-customers > .title-customers  >.name-title> .button-cancel:hover{
+    color: #8f8f8f;
+}
+
+.list-customers > .title-customers >.name-title > span{
+    font-size: 25px;
+}
+
+.list-customers > .title-customers >.name-title> .name-list > span{
+    font-size: 25px;
+}
+
+
+.list-customers > .content-customers {
+    background: white;
+    min-height: 780px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    padding-bottom: 30px;
+
+}
+
+.list-customers > .content-customers > #modal-customers{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-customers > .content-customers > #modal-customers.modal-customers{
+    display: block;
+}
+.list-customers > .content-customers> #modal-customers > .create-customers{
+    width: 400px;
+    height: 260px;
+    background: white;
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers > .title-add-customers{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers > .title-add-customers >  .title-customers > span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 85px;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers > .title-add-customers > .title-customers{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers > .title-add-customers > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers > .title-add-customers > .close{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers  > .content-customers{
+   width: 300px;
+   height: 120px; 
+   cursor: pointer;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers  > .content-customers > .form-group{
+    width: 300px;
+    height: 70px;
+    margin-left: 25px;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers  > .content-customers > .form-group > .form-control{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-customers > .content-customers> #modal-customers > .create-customers  > .content-customers > .form-group > label{
+    margin-left: 10px;
+    color: #525050;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers  > .content-customers > .form-group > .form-control-area{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 70px;
+    max-height: 70px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers  > button{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.list-customers > .content-customers > #modal-customers > .create-customers  > button:hover{
+    background: #51a8f5;
+}
+
+.list-customers > .content-customers> .filter{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.list-customers > .content-customers >.hight-table{
+    min-height: 600px;
+}
+
+.list-customers > .content-customers > .hight-table > .table{
+    width: 97.5%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.list-customers > .content-customers > .hight-table > .table > thead > tr{
+    width: 1170px;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-customers > .content-customers> .hight-table > .table > thead tr th input{
+    margin-left: 20px;
+}
+.list-customers > .content-customers> .hight-table > .table > thead tr th input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-customers > .content-customers> .hight-table > .table > thead tr th span{
+    margin-left: 20px;
+}
+.list-customers > .content-customers > .hight-table > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+.list-customers > .content-customers> .hight-table > .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+.list-customers > .content-customers> .hight-table > .table > tbody > tr > td > input{
+    margin-left: 20px;
+}
+.list-customers > .content-customers> .hight-table > .table > tbody > tr > .td-7{
+    width: 120px;
+}
+.list-customers > .content-customers> .hight-table > .table > tbody > tr > td > input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-customers > .content-customers> .hight-table > .table > tbody > tr > td span{
+    margin-left: 20px;
+}
+.list-customers > .content-customers> .hight-table > .table > tbody > tr > td button {
+    margin-left: 20px;
+}
+.list-customers > .content-customers> .hight-table > .table > tbody > tr > td .update{
+    border: 0px;
+    width: 50px;
+    border-radius: 5px;
+}
+.list-customers > .content-customers> .pagination-limit{
+    width: 100%;
+    display: flex;
+    z-index: 0;
+}
+.list-customers > .content-customers> .pagination-limit > .limit{
+    margin-top: 30px;
+    width: 15%;
+    margin-left: 5px;
+    display: flex;
+    z-index: 1;
+}
+.list-customers > .content-customers> .pagination-limit > .limit > span{
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+
+}
+.list-customers > .content-customers> .pagination-limit > .pagination{
+    margin:auto;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.list-customers > #warning-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-customers > #warning-modal.warning-modal{
+    display: block;
+}
+.list-customers > #warning-modal > #warning{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    background: white;
+    margin-left: 40%;
+    margin-top: 2%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.list-customers > #warning-modal > #warning.warning{
+    display: block;
+}
+.list-customers > #warning-modal > #warning> .title-warning{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.list-customers > #warning-modal > #warning> .title-warning > span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.list-customers > #warning-modal > #warning> .content-warning{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.list-customers > #warning-modal > #warning> .content-warning >.button-warning{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.list-customers > #warning-modal > #warning> .content-warning >.button-warning > .delete-permission{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.list-customers > #warning-modal > #warning> .content-warning >.button-warning > .back{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+.list-customers > #warning-modal > #warning> .content-warning >.button-warning > .back > span {
+    display: inline-block;
+    margin-top: 5px;
+}

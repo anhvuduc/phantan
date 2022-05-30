@@ -1,0 +1,279 @@
+.list-receipts {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    margin-top:-40px;
+}
+.list-receipts > .title-receipts{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-bottom: -10px;
+}
+.list-receipts > .title-receipts > .name-title{
+    width: 50%;
+}
+
+.list-receipts > .title-receipts  >.name-title> .button-cancel{
+    width: 70px;
+    height: 25px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+}
+.list-receipts > .title-receipts  >.name-title> .button-cancel:hover{
+    color: #8f8f8f;
+}
+
+.list-receipts > .title-receipts >.name-title > span{
+    font-size: 25px;
+}
+
+.list-receipts > .title-receipts >.name-title> .name-list > span{
+    font-size: 25px;
+}
+
+.list-receipts > .content-receipts {
+    background: white;
+    min-height: 780px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    padding-bottom: 30px;
+
+}
+.list-receipts > .content-receipts> .filter{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+
+.list-receipts > .content-receipts >.hight-table{
+    min-height: 600px;
+}
+
+.list-receipts > .content-receipts > .hight-table > .table{
+    width: 97.5%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.list-receipts > .content-receipts > .hight-table > .table > thead > tr{
+    width: 1170px;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-receipts > .content-receipts> .hight-table > .table > thead tr th input{
+    margin-left: 20px;
+}
+.list-receipts > .content-receipts> .hight-table > .table > thead tr th input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-receipts > .content-receipts> .hight-table > .table > thead tr th span{
+    margin-left: 20px;
+}
+.list-receipts > .content-receipts > .hight-table > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+.list-receipts > .content-receipts> .hight-table > .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > td > input{
+    margin-left: 20px;
+}
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > .td-7{
+    width: 120px;
+}
+
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > .td-6{
+    width: 300px;
+}
+
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > .td-6 > button{
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    background-color: white;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > .td-6 > button:hover{
+    color: #8f8f8f;
+}
+
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > td > input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > td span{
+    margin-left: 20px;
+}
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > td button {
+    margin-left: 20px;
+}
+.list-receipts > .content-receipts> .hight-table > .table > tbody > tr > td .update{
+    border: 0px;
+    width: 50px;
+    border-radius: 5px;
+}
+.list-receipts > .content-receipts> .pagination-limit{
+    width: 100%;
+    display: flex;
+    z-index: 0;
+}
+.list-receipts > .content-receipts> .pagination-limit > .limit{
+    margin-top: 30px;
+    width: 15%;
+    margin-left: 5px;
+    display: flex;
+    z-index: 1;
+}
+.list-receipts > .content-receipts> .pagination-limit > .limit > span{
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.list-receipts > .content-receipts> .pagination-limit > .pagination{
+    margin:auto;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.list-receipts > #modal-material-order{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-receipts > #modal-material-order.modal-material-order{
+    display: block;
+}
+.list-receipts> #modal-material-order > .create-material-order{
+    width: 700px;
+    min-height: 150px;
+    background: white;
+    margin-left: 37%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-receipts > #modal-material-order > .create-material-order > .title-add-material-order{
+    width: 700px;
+    height: 50px;
+    margin-left: 100px;
+    display: flex;
+}
+.list-receipts > #modal-material-order > .create-material-order > .title-add-material-order >  .title-material-order > span{
+    font-size: 20px;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.list-receipts > #modal-material-order > .create-material-order > .title-add-material-order > .title-material-order{
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-receipts > #modal-material-order > .create-material-order > .title-add-material-order > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-receipts > #modal-material-order > .create-material-order > .title-add-material-order > .close{
+    margin-top: 10px;
+    margin-left: -80px;
+}
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order{
+   width: 650px;
+   margin-left: 20px;
+   cursor: pointer;
+}
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table{
+    min-height: 100px; 
+}
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list-receipts> #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > thead > tr{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > thead tr th span{
+    margin-left: 10px;
+}
+
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody > tr > .td-1{
+    width: 10%;
+}
+
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody > tr > .td-2{
+    width: 20%;
+}
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody > tr > .td-3{
+    width: 30%;
+}
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody > tr > .td-4{
+    width: 20%;
+}
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody > tr > .td-5{
+    width: 20%;
+}
+
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+
+.list-receipts > #modal-material-order > .create-material-order  > .content-material-order > .hight-table > .table > tbody > tr > td span{
+    margin-left: 10px;
+}
+
+.list-receipts > #modal-material-order > .create-material-order  > .title-material-order-total{
+    width: 650px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.list-receipts > #modal-material-order > .create-material-order  > .title-material-order-total > span{
+    font-size:20px;
+}

@@ -1,0 +1,98 @@
+.body{
+    width: 100%;
+    margin: auto;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body > .title-customers{
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+}
+.body > .title-customers > .button-cancel{
+    width: 70px;
+    height: 25px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+}
+.body > .title-customers > .button-cancel:hover{
+    color: #8f8f8f;
+}
+.body > .title-customers > .button-add{
+    float: right;
+    width: 120px;
+    line-height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: -20px;
+}
+.body > .title-customers > .button-add:hover{
+    background: #64aff1;
+}
+
+.body > .add-new-customer{
+    width: 1000px;
+    height: 550px;
+    background: white;
+    margin: auto;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    margin-top: 10px;
+}
+.body > .add-new-customer .title{
+    width: 1000px;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+.body > .add-new-customer .title span{
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.body > .add-new-customer > .card-body .group{
+    width: 1000px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.body > .add-new-customer > .card-body .group .group-main{
+    margin: auto;
+}
+.body > .add-new-customer > .card-body .group .group-main .form-group > input{
+    width: 380px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+}
+
+.body > .add-new-customer > .card-body .group .group-main .form-group{
+    margin-bottom: 50px;
+}
+.body > .add-new-customer > .card-body > form > .form-group{
+    margin-left: 400px;
+    margin-top: 10px;
+}
+.body label{
+    color: black;
+    margin-left: 10px;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 330px;
+    border: 0px;
+    border-radius: 3px;
+}
+.btn-success{
+    background: #008aff;
+}

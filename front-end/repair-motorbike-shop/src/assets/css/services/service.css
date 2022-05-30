@@ -1,0 +1,496 @@
+.list-services {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    margin-top: -20px
+}
+.list-services > .title-services{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-bottom: -30px;
+}
+.list-services > .title-services > .name-title{
+    width: 50%;
+}
+.list-services > .title-services > .name-title >span {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.list-services > .title-services > .add-new-service{
+    width: 50%;
+}
+.list-services > .title-services > .add-new-service > .button-add{
+    float: right;
+    width: 120px;
+    line-height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.list-services > .title-services > .add-new-service > .button-add:hover{
+    background: #64aff1;
+}
+
+.button-back{
+    width: 100px;
+    height: 30px;
+    color: gray;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.button-back > span{
+    font-size: 20px;
+}
+
+
+.list-services > .content-services {
+    background: white;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    padding-bottom: 30px;
+}
+
+.list-services > .content-services > #modal-service{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-services > .content-services > #modal-service.modal-service{
+    display: block;
+}
+.list-services > .content-services> #modal-service > .create-service{
+    width: 400px;
+    height: 340px;
+    background: white;
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-services > .content-services > #modal-service > .create-service > .title-add-service{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.list-services > .content-services > #modal-service > .create-service > .title-add-service >  .title-service > span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 85px;
+}
+.list-services > .content-services > #modal-service > .create-service > .title-add-service > .title-service{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-services > .content-services > #modal-service > .create-service > .title-add-service > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-services > .content-services > #modal-service > .create-service > .title-add-service > .close{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.list-services > .content-services > #modal-service > .create-service  > .content-service{
+   width: 300px;
+   height: 200px; 
+   cursor: pointer;
+}
+.list-services > .content-services > #modal-service > .create-service  > .content-service > .form-group{
+    width: 300px;
+    height: 70px;
+    margin-left: 25px;
+}
+.list-services > .content-services > #modal-service > .create-service  > .content-service > .form-group > .form-control{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-services > .content-services > #modal-service > .create-service  > .content-service > .form-group > label{
+    margin-left: 10px;
+    color: #525050;
+}
+.list-services > .content-services > #modal-service > .create-service  > .content-service > .form-group > .form-control-area{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 70px;
+    max-height: 70px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-services > .content-services > #modal-service > .create-service  > button{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.list-services > .content-services > #modal-service > .create-service  > button:hover{
+    background: #51a8f5;
+}
+
+.list-services > .content-services > #modal-update-service{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-services > .content-services > #modal-update-service.modal-update-service{
+    display: block;
+}
+.list-services > .content-services> #modal-update-service > .create-update-service{
+    width: 400px;
+    height: 340px;
+    background: white;
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service > .title-update-service{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service > .title-update-service >  .title-update-service > span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 85px;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service > .title-update-service > .title-update-service{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service > .title-update-service > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service > .title-update-service > .close{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service  > .content-update-service{
+   width: 300px;
+   height: 200px; 
+   cursor: pointer;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service  > .content-update-service > .form-group{
+    width: 300px;
+    height: 70px;
+    margin-left: 25px;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service  > .content-update-service > .form-group > .form-control{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service  > .content-update-service > .form-group > label{
+    margin-left: 10px;
+    color: #525050;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service  > .content-update-service > .form-group > .form-control-area{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 70px;
+    max-height: 70px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service  > button{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.list-services > .content-services > #modal-update-service > .create-update-service  > button:hover{
+    background: #51a8f5;
+}
+.list-services > .content-services> .filter{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+    
+}
+.list-services > .content-services> .filter > .action{
+    max-width: 610px;
+    height: 35px;
+    display: flex;
+    border-bottom: 1px solid #dddddd ;
+    margin-left: 50px;
+    margin-top: 12px;
+    background: white;
+    
+}
+.list-services > .content-services> .filter > .action > .select{
+    width: 140px;
+    
+}
+.list-services > .content-services> .filter > .action > .select:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-services > .content-services> .filter > .action > .add-services{
+    display: flex;
+    min-width: 140px;
+    height: 35px;
+
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-action{
+    width: 160px;
+    height: 35px;
+    border: 0px;
+    cursor: pointer;
+    background: white;
+    color: #525050;
+    font-size: 14px;
+    
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-action:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-other{
+    width: 120px;
+    height: 35px;
+    background: white;
+    color: #525050;
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: -1px;
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-other:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-other > .title-button{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 34px;
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-other > #content-button{
+    width: 120px;
+    min-height: 35px;
+    margin-top: 10px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-other > #content-button.content-button{
+    display: block;
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-other > #content-button > .button-action{
+    width: 120px;
+    height: 35px;
+    background: white;
+    border: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    color: #525050;
+}
+.list-services > .content-services> .filter > .action > .add-services > .button-other > #content-button > .button-action:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+
+.list-services > .content-services > .height-table {
+    min-height: 600px;
+}
+
+.list-services > .content-services > .height-table > .table{
+    width: 97.5%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.list-services > .content-services > .height-table > .table > thead > tr{
+    width: 1170px;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-services > .content-services > .height-table > .table > thead tr th input{
+    margin-left: 20px;
+}
+.list-services > .content-services > .height-table > .table > thead tr th input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-services > .content-services > .height-table > .table > thead tr th span{
+    margin-left: 20px;
+}
+.list-services > .content-services > .height-table > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+.list-services > .content-services > .height-table > .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+.list-services > .content-services > .height-table > .table > tbody > tr > td > input{
+    margin-left: 20px;
+}
+.list-services > .content-services > .height-table > .table > tbody > tr > .td-7{
+    width: 120px;
+}
+.list-services > .content-services > .height-table > .table > tbody > tr > td > input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-services > .content-services > .height-table > .table > tbody > tr > td span{
+    margin-left: 20px;
+}
+.list-services > .content-services > .height-table > .table > tbody > tr > td button {
+    margin-left: 20px;
+}
+.list-services > .content-services > .height-table > .table > tbody > tr > td .update{
+    border: 0px;
+    width: 50px;
+    border-radius: 5px;
+}
+.list-services > .content-services> .pagination-limit{
+    width: 100%;
+    display: flex;
+    z-index: 0;
+}
+.list-services > .content-services> .pagination-limit > .limit{
+    margin-top: 30px;
+    width: 15%;
+    margin-left: 5px;
+    display: flex;
+    z-index: 1;
+}
+.list-services > .content-services> .pagination-limit > .limit > span{
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.list-services > .content-services> .pagination-limit > .pagination{
+    margin:auto;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.list-services > #warning-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-services > #warning-modal.warning-modal{
+    display: block;
+}
+.list-services > #warning-modal > #warning{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    background: white;
+    margin-left: 40%;
+    margin-top: 5%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.list-services > #warning-modal > #warning.warning{
+    display: block;
+}
+.list-services > #warning-modal > #warning> .title-warning{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.list-services > #warning-modal > #warning> .title-warning > span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.list-services > #warning-modal > #warning> .content-warning{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.list-services > #warning-modal > #warning> .content-warning >.button-warning{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.list-services > #warning-modal > #warning> .content-warning >.button-warning > .delete-permission{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.list-services > #warning-modal > #warning> .content-warning >.button-warning > .back{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+.list-services > #warning-modal > #warning> .content-warning >.button-warning > .back > span {
+    display: inline-block;
+    margin-top: 5px;
+}

@@ -1,0 +1,73 @@
+.body{
+    width: 1200px;
+    margin: auto;
+}
+.body > .add-edit-salary{
+    width: 600px;
+    height: 300px;
+    background: white;
+    margin: auto;
+    color: black;
+    border-radius: 3px;
+    
+}
+.body > .add-edit-salary .title{
+    width: 600px;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+.body > .add-edit-salary .title span{
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.body > .add-edit-salary > .card-body .group{
+    width: 600px;
+    margin-top: 20px;
+}
+
+.body > .add-edit-salary > .card-body .group .group-main{
+    margin-left: 90px;
+}
+.body > .add-edit-salary > .card-body .group .group-main .form-group > input{
+    width: 380px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+}
+.body > .add-edit-salary > .card-body .group .group-main .form-group{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.body > .add-edit-salary > .card-body .group .group-main .form-group .month-choose{
+    width: 300px;
+    height: 30px;
+}
+.body > .add-edit-salary > .card-body > form > .form-group{
+    margin-left: 400px;
+    margin-top: 10px;
+}
+.body > .add-edit-salary .body label{
+    color: black;
+}
+.body > .add-edit-salary .btn{
+    width: 80px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 200px;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.body > .add-edit-salary .btn-success{
+    background: #008aff;
+    color: white;
+}
+.body > .add-edit-salary .btn-danger{
+    border: 1px solid #008aff;
+    background: white;
+    color: #008aff;
+}

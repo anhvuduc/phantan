@@ -1,0 +1,345 @@
+.body-payment-invoice{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    font-size: 14px;
+}
+.body-payment-invoice > .title-add-invoice {
+    width: 1150px;
+    height: 100px;
+    margin-left: 30px;
+    display: flex;
+}
+.body-payment-invoice > .title-add-invoice >.left-title-add-invoice{
+    width: 1000px;
+}
+.body-payment-invoice > .title-add-invoice >.left-title-add-invoice > .back > .cancel-button{
+    width: 100px;
+    top: 50px;
+    bottom: 50px;
+    color: gray;
+    cursor: pointer;
+    border: 0px;
+    margin-left: 10px;
+}
+.body-payment-invoice > .title-add-invoice >.left-title-add-invoice > .back > .cancel-button > span{
+    font-size: 20px;
+}
+.body-payment-invoice > .title-add-invoice  >.left-title-add-invoice > .name-page{
+    margin-top: 20px;
+}
+.body-payment-invoice > .title-add-invoice  >.left-title-add-invoice > .name-page > span{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.body-payment-invoice > .title-add-invoice  >.right-title-add-invoice {
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+
+
+.body-payment-invoice > .content-add-invoice{
+    width: 1100px;
+    margin-left: 50px;
+}
+.body-payment-invoice > .content-add-invoice > .top-left-invoice{
+    width: 540px;
+    min-height: 200px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+.body-payment-invoice > .content-add-invoice > .top-left-invoice > .title-customer{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.body-payment-invoice > .content-add-invoice > .top-left-invoice > .content-customer > .search-customer-vehicle{
+    width: 540px;
+    min-height: 100px;
+
+}
+#btn-pay{
+    width: 100px;
+    height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+}
+#btn-pay:hover{
+    background: #52acfc;
+}
+#btn-pay.btn-pay{
+    display: block;
+}
+
+.body-payment-invoice > .content-add-invoice > .top-right-invoice{
+    width: 540px;
+    float: right;
+    min-height: 200px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+}
+
+.body-payment-invoice > .content-add-invoice > .top-right-invoice > .title-employee{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.body-payment-invoice > .content-add-invoice > .main-invoice{
+    width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    z-index: 0;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice{
+    width: 1100px;
+    min-height: 300px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .title-material {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material{
+    width: 1100px;
+    height: 100px;
+    
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .top-content{
+    width: 1100px;
+    
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content{
+    width: 1100px;
+    min-height: 100px;
+    margin-top: 20px;
+    z-index: 0;
+    margin-bottom: 20px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table {
+    width: 1100px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table {
+    width: 1100px;
+    font-size: 12px;
+    background: white;
+    border-collapse: collapse;  
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr{
+    height: 30px;
+    background: #e6f9fa;
+    font-size: 12px;
+    font-weight: bolder;
+    border: 0px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > th > span{
+    display: inline-block;
+    margin-left: -15px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr{
+    border-bottom: 1px solid #dddddd;
+    height: 40px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .td-1{
+    width: 200px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .td-2{
+    width: 400px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .td-3{
+    width: 200px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .td-4{
+    width: 200px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .td-5{
+    width: 100px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr{
+    border-bottom: 1px solid #dddddd;
+    height: 50px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-1{
+    width: 200px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-2{
+    width: 400px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-3{
+    width: 200px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-4{
+    width: 200px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .td-5{
+    width: 100px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > td > span{
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > td > span{
+    margin-left: 50px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > td > input{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    text-align: right;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .input{
+    text-align: center;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > thead > tr > .th-5{
+    width: 20px;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-material{
+    
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-material > span{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-material > span:hover{
+    color: red;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-service > span{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .main-content > .table > table > tbody > tr > .delete-service > span:hover{
+    color: red;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .bottom-content{
+    width: 1100px;
+    min-height: 50px;
+    z-index: 0;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .bottom-content > .total{
+    
+    float: right;
+}
+.body-payment-invoice > .content-add-invoice > .main-invoice > .left-invoice > .content-material > .bottom-content > .total > table{
+    min-width: 200px;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+.body-payment-invoice > .content-add-invoice > .bottom-invoice{
+    width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    z-index: -1;
+    
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .left-invoice{
+    width: 300px;
+    min-height: 200px;
+    background: white;
+    margin-bottom: 100px;
+
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .left-invoice .note-invoice{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .left-invoice .note-invoice label{
+    color: black;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .left-invoice > .note-invoice > textarea{
+    margin-top: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 130px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice{
+    width: 780px;
+    margin-left: 20px;
+    min-height:  200px;
+    background: white;
+    margin-bottom: 100px;
+    
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .title-right-invoice{
+    width: 780px;
+    height: 40px;
+    border-bottom: 1px solid #dddddd;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .title-right-invoice > span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice {
+    display: flex;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method{
+   width: 380px;
+   min-height:  150px;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method > .title-pay-method{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method > .content-pay-method{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .pay-method > .content-pay-method >form > .pay-method-group > label{
+    color: black;
+}
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay{
+    width: 400px;
+    min-height:  150px;
+ }
+ .body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay > table{
+    margin-top: 50px; 
+    width: 300px;
+    font-size: 13px;
+ }
+ .body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay > table >tr> th{
+    float: left;
+ }
+.body-payment-invoice > .content-add-invoice > .bottom-invoice > .right-invoice > .content-pay-invoice > .total-pay > table > .total> th, .total-td{
+    color: red;
+}
