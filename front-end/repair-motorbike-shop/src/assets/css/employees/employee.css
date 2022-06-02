@@ -1,0 +1,454 @@
+.list-employees {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    margin-top: -20px;
+}
+.list-employees > #modal-timesheet{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-employees > #modal-timesheet.modal-timesheet{
+    display: block;
+}
+.list-employees > #modal-timesheet > .create-timesheet{
+    width: 400px;
+    height: 200px;
+    background: white;
+    margin-left: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-employees > #modal-timesheet > .create-timesheet > .title-add-timesheet{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.list-employees > #modal-timesheet > .create-timesheet > .title-add-timesheet >  .title-timesheet > span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 60px;
+}
+.list-employees > #modal-timesheet > .create-timesheet > .title-add-timesheet > .title-timesheet{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-employees > #modal-timesheet > .create-timesheet > .title-add-timesheet > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-employees > #modal-timesheet > .create-timesheet > .title-add-timesheet > .close{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-employees > #modal-timesheet > .create-timesheet  > select{
+   width: 150px;
+   height: 35px; 
+   margin-left: 125px;
+   border: 0px;
+   border-bottom: 1px solid #dddddd;
+   cursor: pointer;
+}
+.list-employees > #modal-timesheet > .create-timesheet  > button{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    color: white;
+    margin-left: 150px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.list-employees > .title-employees{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-bottom: -30px;
+}
+.list-employees > .title-employees > .name-title{
+    width: 50%;
+}
+.list-employees > .title-employees > .name-title >span {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.list-employees > .title-employees > .add-new-invoice{
+    width: 50%;
+}
+.list-employees > .title-employees > .add-new-invoice > .button-add{
+    float: right;
+    width: 120px;
+    line-height: 35px;
+    border: 0px;
+    background: #008aff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.list-employees > .title-employees > .add-new-invoice > .button-add:hover{
+    background: #64aff1;
+}
+.list-employees > .content-employees {
+    background: white;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    padding-bottom: 30px;
+}
+.list-employees > .content-employees> .filter{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+    
+}
+.list-employees > .content-employees> .filter > .action{
+    max-width: 640px;
+    height: 35px;
+    display: flex;
+    border-bottom: 1px solid #dddddd ;
+    margin-left: 35px;
+    margin-top: 12px;
+    background: white;
+    
+}
+.list-employees > .content-employees> .filter > .action > .select{
+    width: 140px;
+    display: flex;
+    
+}
+.list-employees > .content-employees> .filter > .action > .select:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+    
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices{
+    display: flex;
+    min-width: 140px;
+    height: 35px;
+   
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-action{
+    width: 120px;
+    height: 35px;
+    border: 0px;
+    cursor: pointer;
+    background: white;
+    color: #525050;
+    font-size: 14px;
+    
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-action:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-other{
+    width: 120px;
+    height: 35px;
+    background: white;
+    color: #525050;
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: -1px;
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-other:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-other > .title-button{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 34px;
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-other > #content-button{
+    width: 120px;
+    min-height: 35px;
+    margin-top: 10px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-other > #content-button.content-button{
+    display: block;
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-other > #content-button > .button-action{
+    width: 120px;
+    height: 35px;
+    background: white;
+    border: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    color: #525050;
+}
+.list-employees > .content-employees> .filter > .action > .add-invoices > .button-other > #content-button > .button-action:hover{
+    background: #fafafa;
+    border-bottom: 2px solid #008aff ;
+}
+
+.list-employees > .content-employees > .table{
+    width: 97.5%;
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.list-employees > .content-employees > .table > thead > tr{
+    width: 1170px;
+    height: 50px;
+    text-align: left;
+    background: white;
+    border-bottom: 1px solid #dddddd;
+}
+.list-employees > .content-employees> .table > thead tr th input{
+    margin-left: 20px;
+}
+.list-employees > .content-employees> .table > thead tr th input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-employees > .content-employees> .table > thead tr th span{
+    margin-left: 20px;
+}
+.list-employees > .content-employees > .table > tbody > tr > td{
+    border-bottom: 1px solid #dddddd;
+}
+.list-employees > .content-employees> .table > tbody tr{
+    line-height: 50px;
+    color: #808080;
+}
+.list-employees > .content-employees> .table > tbody > tr > td > input{
+    margin-left: 20px;
+}
+.list-employees > .content-employees> .table > tbody > tr > .td-7{
+    width: 150px;
+}
+.list-employees > .content-employees> .table > tbody > tr > td > input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.list-employees > .content-employees> .table > tbody > tr > td span{
+    margin-left: 20px;
+}
+.list-employees > .content-employees> .table > tbody > tr > td button {
+    margin-left: 20px;
+}
+.list-employees > .content-employees> .table > tbody > tr > td .update{
+    border: 0px;
+    width: 50px;
+    border-radius: 5px;
+}
+.list-employees > .content-employees> .pagination-limit{
+    width: 100%;
+    display: flex;
+    z-index: 0;
+}
+.list-employees > .content-employees> .pagination-limit > .limit{
+    margin-top: 30px;
+    width: 15%;
+    margin-left: 5px;
+    display: flex;
+    z-index: 1;
+}
+.list-employees > .content-employees> .pagination-limit > .limit > span{
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.list-employees > .content-employees> .pagination-limit > .pagination{
+    margin:auto;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.list-employees > #modal-salaryday{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.list-employees > #modal-salaryday.modal-salaryday{
+    display: block;
+}
+.list-employees> #modal-salaryday > .create-salaryday{
+    width: 400px;
+    height: 250px;
+    background: white;
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+.list-employees > #modal-salaryday > .create-salaryday > .title-salaryday{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.list-employees > #modal-salaryday > .create-salaryday > .title-salaryday >  .title-salaryday > span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 70px;
+}
+.list-employees > #modal-salaryday > .create-salaryday > .title-salaryday > .title-salaryday{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-employees > #modal-salaryday > .create-salaryday > .title-salaryday > .close > span:hover{
+    color: red;
+    cursor: pointer;
+}
+.list-employees > #modal-salaryday > .create-salaryday > .title-salaryday > .close{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.list-employees > #modal-salaryday > .create-salaryday  > .content-salaryday{
+   width: 300px;
+   height: 150px; 
+   cursor: pointer;
+}
+.list-employees > #modal-salaryday > .create-salaryday  > .content-salaryday > .form-group{
+    width: 300px;
+    height: 70px;
+    margin-left: 25px;
+}
+.list-employees > #modal-salaryday > .create-salaryday  > .content-salaryday > .form-group > .form-control{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-employees > #modal-salaryday > .create-salaryday  > .content-salaryday > .form-group > label{
+    margin-left: 10px;
+    color: #525050;
+}
+.list-employees > #modal-salaryday > .create-salaryday  > .content-salaryday > .form-group > .form-control-area{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 70px;
+    max-height: 70px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.list-employees > #modal-salaryday > .create-salaryday  > button{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    color: white;
+    margin-left: 150px;
+    cursor: pointer;
+}
+.list-employees > #modal-salaryday > .create-salaryday  > button:hover{
+    background: #51a8f5;
+}
+
+
+.list-employees > #warning-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.list-employees > #warning-modal.warning-modal{
+    display: block;
+}
+.list-employees > #warning-modal > #warning{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    background: white;
+    margin-left: 40%;
+    margin-top: 2%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.list-employees > #warning-modal > #warning.warning{
+    display: block;
+}
+.list-employees > #warning-modal > #warning> .title-warning{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.list-employees > #warning-modal > #warning> .title-warning > span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.list-employees > #warning-modal > #warning> .content-warning{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.list-employees > #warning-modal > #warning> .content-warning >.button-warning{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.list-employees > #warning-modal > #warning> .content-warning >.button-warning > .delete-permission{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.list-employees > #warning-modal > #warning> .content-warning >.button-warning > .back{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+.list-employees > #warning-modal > #warning> .content-warning >.button-warning > .back > span {
+    display: inline-block;
+    margin-top: 5px;
+}

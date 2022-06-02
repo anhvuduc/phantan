@@ -1,0 +1,311 @@
+
+.body-view-receipt{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+.body-view-receipt > .title-add-receipt {
+    width: 1150px;
+    height: 100px;
+    margin-left: 30px;
+    display: flex;
+}
+.body-view-receipt > .title-add-receipt >.left-title-add-receipt{
+    width: 1000px;
+}
+.body-view-receipt > .title-add-receipt >.left-title-add-receipt > .back > .cancel-button{
+    width: 100px;
+    height: 30px;
+    color: gray;
+    cursor: pointer;
+    border: 0px;
+    margin-left: 10px;
+}
+.body-view-receipt > .title-add-receipt >.left-title-add-receipt > .back > .cancel-button > span{
+    font-size: 20px;
+}
+.body-view-receipt > .title-add-receipt  >.left-title-add-receipt > .name-page{
+    margin-top: 20px;
+}
+.body-view-receipt > .title-add-receipt  >.left-title-add-receipt > .name-page > span{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.body-view-receipt > .title-add-receipt  >.right-title-add-receipt {
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+
+
+.body-view-receipt > .content-add-receipt{
+    width: 1100px;
+    margin-left: 50px;
+}
+.body-view-receipt > .content-add-receipt > .top-receipt{
+    width: 500px;
+    min-height: 140px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+.body-view-receipt > .content-add-receipt > .top-receipt > .title-receipt{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.body-view-receipt > .content-add-receipt > .top-receipt > .info-receipt{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.body-view-receipt > .content-add-receipt > .top-receipt > .info-receipt > table{
+    width: 350px;
+}
+
+.body-view-receipt > .content-add-receipt > .main-receipt{
+    width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    z-index: 0;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt{
+    width: 1100px;
+    min-height: 300px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .title-material {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material{
+    width: 1100px;
+    height: 100px;
+    
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .top-content{
+    width: 1100px;
+    
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content{
+    width: 1100px;
+    min-height: 100px;
+    margin-top: 20px;
+    z-index: 0;
+    margin-bottom: 20px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table {
+    width: 1100px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table {
+    width: 1100px;
+    font-size: 12px;
+    background: white;
+    border-collapse: collapse;  
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr{
+    height: 30px;
+    background: #e6f9fa;
+    font-size: 12px;
+    font-weight: 500;
+    border: 0px;
+    border-bottom: 1px solid #e6f9fa;
+    border-top: 1px solid #e6f9fa;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > th > span{
+    display: inline-block;
+    margin-left: -15px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr{
+    border-bottom: 1px solid #dddddd;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > .td-1{
+    width: 200px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > .td-2{
+    width: 300px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > .td-3{
+    width: 200px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > .td-4{
+    width: 200px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > .td-5{
+    width: 100px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr{
+    border-bottom: 1px solid #dddddd;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .td-1{
+    width: 200px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .td-2{
+    width: 300px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .td-3{
+    width: 200px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .td-4{
+    width: 200px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .td-5{
+    width: 100px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > td > span{
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > td > span{
+    margin-left: 50px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > td > input{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    text-align: right;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .input{
+    text-align: center;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > thead > tr > .th-5{
+    width: 20px;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .delete-material > span{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .delete-material > span:hover{
+    color: red;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .delete-service > span{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .main-content > .table > table > tbody > tr > .delete-service > span:hover{
+    color: red;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .bottom-content{
+    width: 1100px;
+    min-height: 50px;
+    border-top: 1px solid #dddddd;
+    z-index: 0;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .bottom-content > .total{
+    
+    float: right;
+}
+.body-view-receipt > .content-add-receipt > .main-receipt > .left-receipt > .content-material > .bottom-content > .total > table{
+    min-width: 200px;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+.body-view-receipt > .content-add-receipt > .bottom-receipt{
+    width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .left-receipt{
+    width: 300px;
+    min-height: 200px;
+    background: white;
+    margin-bottom: 100px;
+
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .left-receipt .note-receipt{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .left-receipt .note-receipt label{
+    color: black;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .left-receipt > .note-receipt > textarea{
+    margin-top: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 130px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt{
+    width: 780px;
+    margin-left: 20px;
+    min-height:  200px;
+    background: white;
+    margin-bottom: 100px;
+    
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .title-right-receipt{
+    width: 780px;
+    height: 40px;
+    border-bottom: 1px solid #dddddd;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .title-right-receipt > span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt {
+    display: flex;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .pay-method{
+   width: 380px;
+   min-height:  150px;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .pay-method > .title-pay-method{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .pay-method > .content-pay-method{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .pay-method > .content-pay-method >form > .pay-method-group > label{
+    color: black;
+}
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .total-pay{
+    width: 400px;
+    min-height:  150px;
+ }
+ .body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .total-pay > table{
+    margin-top: 50px; 
+    width: 300px;
+    font-size: 13px;
+ }
+ .body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .total-pay > table >tr> th{
+    float: left;
+ }
+.body-view-receipt > .content-add-receipt > .bottom-receipt > .right-receipt > .content-pay-receipt > .total-pay > table > .total> th, .total-td{
+    color: red;
+}

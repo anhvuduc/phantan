@@ -1,0 +1,9 @@
+.limit-pagination{
+    margin-top: 20px;   
+}
+.limit-pagination > select {
+    border: 1px solid #bbbbbb;
+    min-height: 25px;
+    border-radius: 3px;
+    color: #5a5a5a;
+}

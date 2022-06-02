@@ -1,0 +1,278 @@
+.body{
+    width: 1200px;
+    margin: auto;
+}
+.body > .add-new-role{
+    width: 600px;
+    height: 550px;
+    background: white;
+    margin: auto;
+    color: black;
+    border-radius: 5px;
+}
+.body > .add-new-role .title{
+    width: 600px;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+.body > .add-new-role .title span{
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.body > .add-new-role >.card-body > form > .group{
+    width: 800px;
+    margin-top: 20px;
+}
+
+.body > .add-new-role >.card-body > form > .group .group-main{
+    margin-left: 100px;
+    
+}
+.body > .add-new-role > .card-body > form >.group .group-main .form-group > input{
+    width: 390px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    
+}
+.body > .add-new-role > .card-body > form > .group  .group-main  .form-group  textarea{
+    width: 390px;
+    height: 100px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group{
+    margin-bottom: 10px;
+    z-index: 0;
+
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission{
+
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission .button-add-permission{
+    border: 0px;
+    width: 350px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 45px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission .button-add-permission:hover{
+    background: #008aff;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission .button-add-permission:hover > span {
+    color: white;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission .button-add-permission > span{
+    color: #008aff;
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission  > #modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal.display-modal{
+    display: block;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal.hidden-modal{
+    display: none;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission{
+    width: 500px;
+    height: 300px;
+    border: 1px solid #dddddd;
+    background: white;
+    margin-left: 650px;
+    margin-top: 40px;
+    display: none;
+    z-index: 1;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission.display-permission{
+    display: block;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission.hidden-permission{
+    display: none;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .title-add-permission {
+    display: flex;
+    height: 35px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .title-add-permission > .close{
+    width: 100px;
+    text-align: center;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .title-add-permission > .close > span{
+    display: inline-block;
+    margin-left: 70px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .title-add-permission > .close > span:hover{
+    color: red;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .title-add-permission > .title-permission{
+    width: 400px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission >.title-add-permission > .title-permission > span{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .form-group-permission{
+    height: 70px;
+    margin-left: 40px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .form-group-permission > .form-control{
+    width: 390px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > .form-group-permission > .form-control-2{
+    width: 390px;
+    height: 100px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group .add-permission > #modal > #create-permission > button {
+    width: 150px;
+    height: 30px;
+    margin-left: 180px;
+    margin-top: 80px;
+    border: 0px;
+    border-radius: 3px;
+    background: #008aff;
+    cursor: pointer;
+}
+
+
+
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list{
+    width: 400px;
+    z-index: 0;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list .role-list{
+    display: flex;
+    height: 30px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list .role-list input {
+    margin-left: 50px;
+
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list .role-list label{
+    width: 300px;
+}
+
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list .role-list .delete span{
+    display: inline-block;
+    margin-left: 6px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list .role-list .delete span:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal.warning-modal{
+    display: block;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    background: white;
+    margin-left: 600px;
+    margin-top: -40px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning.warning{
+    display: block;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning> .title-warning{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning> .title-warning > span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning> .content-warning{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning> .content-warning >.button-warning{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning> .content-warning >.button-warning > .delete-permission{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning> .content-warning >.button-warning > .back{
+    width: 65px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+.body > .add-new-role > .card-body > form > .group .group-main .form-group-permission-list > #warning-modal > #warning> .content-warning >.button-warning > .back > span {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.body > .add-new-role  label{
+    color: black;
+    margin-left: 10px;
+}
+.body > .add-new-role .btn{
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 150px;
+    border: 0px;
+    border-radius: 3px;
+}
+.body > .add-new-role .btn-success{
+    background: #008aff;
+}

@@ -1,0 +1,86 @@
+.search-material > form > .search-invoice{
+    width: 490px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: gray;
+    display: flex;
+ }
+.search-material > form > .search-invoice > .icon-search{
+    width: 30px;
+    height: 30px;
+}
+.search-material > form > .search-invoice > input {
+    width: 440px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px;
+}
+.search-material > form > .search-invoice > .choose-materials{
+    width: 50px;
+    height: 30px;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    border-left: 1px solid #dddddd;
+}
+.search-material > form > .search-invoice > .choose-materials > span{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+.search-material > form > .search-invoice > .choose-materials > span:hover{
+    color: #008aff;
+}
+.search-material > #info-material{
+    position: absolute;
+    z-index: 2;
+    margin-top: 5px;
+    width: 490px;
+    background: white;
+    min-height: 50px;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 20px;
+    border-bottom: 1px solid #dddddd;
+    display: none;
+}
+.search-material > #info-material::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
+.search-material > #info-material::-webkit-scrollbar-thumb {
+    background-color: #616161;
+    border-radius: 10px;
+}
+
+.search-material > #info-material.info-material{
+    display: block;
+
+}
+.search-material > #info-material > div > .info-detail{
+    width: 490px;
+   
+    border: 1px solid #dddddd;
+    border-bottom: 0px;
+    cursor: pointer;
+    background: white;
+    
+}
+.search-material > #info-material > div > .info-detail:hover{
+    background: #008aff;
+    color: white;
+}
+.search-material > #info-material > div > .info-detail > table {
+    font-size: 14px;
+    width: 460px;
+}
+.search-material > #info-material > div > .info-detail > table > tr > .td-1{
+    float: left;
+    margin-left: 10px;
+}
+.search-material > #info-material > div > .info-detail > table > tr > .td-2{
+    float: right;
+}

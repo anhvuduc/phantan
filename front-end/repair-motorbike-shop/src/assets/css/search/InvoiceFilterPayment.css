@@ -1,0 +1,87 @@
+.button-select-invoices-payment{
+    width: 140px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    z-index: 2;
+}
+.button-select-invoices-payment > .title-search{
+    display: flex;
+}
+.button-select-invoices-payment > .title-search > span{
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #525050;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-select-invoices-payment > #button-content-filters-role{
+    width: 170px;
+    height: 130px;
+    background: white;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -8px;
+    border-radius: 3px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.button-select-invoices-payment > #button-content-filters-role.button-content-filters-role{
+    display: block;
+}
+.button-select-invoices-payment > #button-content-filters-role > .title-filters{
+    width: 170px;
+    height: 30px;
+    display: flex;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.button-select-invoices-payment > #button-content-filters-role > .title-filters >.filters-status{
+    width: 155px;
+    display: inline-block;
+    margin-left: -10px;   
+    margin-top: 5px;
+}
+.button-select-invoices-payment > #button-content-filters-role > .title-filters > .close-filter{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.button-select-invoices-payment > #button-content-filters-role > .title-filters > .close-filter:hover{
+    color: red;
+}
+.button-select-invoices-payment > #button-content-filters-role > table{
+    width: 150px;
+    height: 50px;
+}
+.button-select-invoices-payment > #button-content-filters-role > table > tr > td{
+    float: left;
+}
+.button-select-invoices-payment > #button-content-filters-role > table > tr > .td-1{
+    width: 30px;
+}
+.button-select-invoices-payment > #button-content-filters-role > table > tr > .td-2{
+    width: 100px;
+}
+.button-select-invoices-payment > #button-content-filters-role > table > tr > .td-2 > span{
+    display: inline-block;
+    float: left;
+}
+.button-select-invoices-payment > #button-content-filters-role > button{
+    background: white;
+    width: 45px;
+    height: 25px;
+    margin-top: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.button-select-invoices-payment > #button-content-filters-role > button:hover{
+    background: #fafafa;
+}
