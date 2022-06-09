@@ -20,42 +20,31 @@ function PaymentInvoice(props) {
             }
         };
     });
-    const [listCustomerVehicleClass,  setListCustomerVehicleClass] = useState('');
-    const [showInfoCustomerVehicle, setShowInfoCustomerVehicle] = useState('');
- 
-    const [id, setId] = useState(props.match.params.id);
-    const [showInfoCustomer, setShowInfoCustomer] = useState('');
-    const [showInfoEmployee, setShowInfoEmployee] = useState('');
+      const [tl, setTl] = React.useState(false);
 
-    const [btnClass, setBtnClass] = useState('');
-    const [materialChoose, setMaterialChoose] = useState([]);
-    const [sumMaterial, setSumMaterial] = useState(0);
+  const [invoices, setInvoices] = useState([]);
 
-    const [serviceChoose, setServiceChoose] = useState([]);
-    const [sumServices, setSumServices] = useState(0);
-    const [status, setStatus] =  useState('');
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-    const [noteInvoice, setNoteInvoice] = useState('');
-    const [payMethod, setPayMethod]  = useState();
-    const [customer, setCustomer] = useState({
-        id: 0,
-        code: '',
-        name: '',
-        phone: '',
+  const [pagination, setPagination] = useState({
+    page: 1,
+    limit: 10,
+    totalRows: 10,
+  });
+  const [filters, setFilters] = useState({
+    page: 1,
+    limit: 10,
+    keyword: "",
+    status: [4]
+  });
+  function handlePageChange(newPage) {
+    // console.log("new page: ", newPage);
+    setFilters({
+      ...filters,
+      page: newPage,
     });
-
-    const [employee, setEmployee] = useState({
-        id: 0,
-        code: '',
-        name: '',
-        phone: ''
-    });
-    const [vehicles, setVehicles] = useState([]);
-    const [vehicle, setVehicle] = useState({
-        id: 0,
-        code: '',
-        licensePlate: ''
-    });
+  }
 
     //Lấy thông tin hóa đơn
     useEffect(() => {
