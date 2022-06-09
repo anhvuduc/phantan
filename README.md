@@ -1,5 +1,5 @@
 "# ptpmpt-22" 
-- git clone https://github.com/anhvuduc/ptpmpt-22.git
+- git clone https://github.com/anhvuduc/phantan
 - cd front_end
 - cd repair-motorbike-shop
 - yarn install
