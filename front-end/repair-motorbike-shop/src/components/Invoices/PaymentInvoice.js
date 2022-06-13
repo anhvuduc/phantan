@@ -20,6 +20,7 @@ function PaymentInvoice(props) {
             }
         };
     });
+    
     const [listCustomerVehicleClass,  setListCustomerVehicleClass] = useState('');
     const [showInfoCustomerVehicle, setShowInfoCustomerVehicle] = useState('');
  
