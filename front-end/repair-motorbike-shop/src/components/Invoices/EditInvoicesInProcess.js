@@ -110,22 +110,22 @@ function EditInvoicesInProcess(props) {
 
     //Lấy list khách hàng
     useEffect(() => {
-        async function fetchCustomerList() {
+        async function fetchServiceList() {
             try {
-                CustomerService.getListCustomer().then((res) => {
-                    let customers = res.data;
+                ServicesService.getAllServiceStillServing().then((res) => {
+                    let servicesData = res.data;
                     console.log(res.data);
-                    setCustomers(
-                        customers.map((customer) => {
+                    setServices(
+                        servicesData.map((service) => {
                             return {
-                                id: customer.id,
-                                code: customer.code,
-                                name: customer.name,
-                                phone: customer.phone,
-                                licensePlate: customer.licensePlate,
+                                id: service.id,
+                                code: service.code,
+                                name: service.name,
+                                description: service.description,
+                                price: service.price,
                             }
                         }))
-
+                    console.log(" dịch vụ : " + servicesData + " : " + services)
                 }).catch(function (error) {
                     console.log("ERROR: " + error.response.data.status)
                     if (error.response.data.status == 403) {
@@ -134,12 +134,34 @@ function EditInvoicesInProcess(props) {
                   })
 
             } catch (error) {
-                console.log("Failed to fetch Customer list: ", error.message);
+                console.log("Failed to fetch Service list: ", error.message);
             }
         }
-        fetchCustomerList();
+        fetchServiceList();
     }, []);
 
+    const showListCustomer = () => {
+        if (listCustomerClass == '') {
+            setListCustomerClass('info-customers');
+        } else {
+            setListCustomerClass('')
+        }
+    }
+    const formAddCustomer = () => {
+        if (modalCustomerClass == '') {
+            setModalCustomerClass('modal-customer');
+            setListCustomerClass('')
+        } else {
+            setModalCustomerClass('')
+        }
+    }
+    const outFormAddCustomer = () => {
+        if (modalCustomerClass == '') {
+            setModalCustomerClass('modal-customer');
+        } else {
+            setModalCustomerClass('')
+        }
+    }
     //Lấy list Phụ kiện
     useEffect(() => {
         async function fetchMaterialList() {
