@@ -139,7 +139,6 @@ function EditInvoicesInProcess(props) {
         }
         fetchCustomerList();
     }, []);
-
     //Lấy list Phụ kiện
     useEffect(() => {
         async function fetchMaterialList() {
