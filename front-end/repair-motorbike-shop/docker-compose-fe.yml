@@ -1,0 +1,19 @@
+version: '3'
+services:
+  font_end:
+    stdin_open: true
+    container_name: fontend-reactjs
+    volumes:
+      - ./:/app
+    build:
+      context: .
+      dockerfile: Dockerfile_fe
+    ports:
+      - 3000:3000
+    networks:
+      - repair_shop
+    # depends_on:
+    #   - repair_shop_web
+networks:
+  repair_shop:
+    driver: bridge

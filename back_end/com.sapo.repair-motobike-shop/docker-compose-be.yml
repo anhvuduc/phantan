@@ -1,0 +1,46 @@
+version: '3'
+services:
+  mysql_repair_shop:
+    image: mysql:8
+    volumes:
+      - ./repair_shop.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - MYSQL_ROOT_HOST=localhost
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=repair_shop
+    networks:
+      - repair_shop
+    expose:
+      - "3307"
+    container_name: mysql_repair_shop
+
+  repair_shop_web:
+    stdin_open: true
+    container_name: backend_spring_boot
+    build:
+      context: .
+      dockerfile: Dockerfile_be
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql_repair_shop
+    networks:
+      - repair_shop
+    restart: on-failure
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3307/repair_shop?useUnicode=yes&characterEncoding=UTF-8
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - SPRING_DATASOURCE_PLATFORM=org.hibernate.dialect.MySQL80Dialect
+    tty: true
+    links:
+      - mysql_repair_shop
+volumes:
+  mysql_repair_shop:
+networks:
+  repair_shop:
+    driver: bridge
+
+#docker network create repair_shop
+#docker container run --name mysql1 --network repair_shop -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=repair_shop -d mysql:8
+#docker container logs -f mysql
