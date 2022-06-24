@@ -1,0 +1,14 @@
+FROM node:14.17.6-alpine
+
+#workdir đến folder cần chạy lệnh
+WORKDIR ./font_end/repair-motobike-shop
+
+COPY package*.json ./app
+
+RUN npm install
+#coppy từ file 1 -> file 2 trong container
+COPY . .
+
+EXPOSE 3000
+ 
+CMD ["npm", "start"]

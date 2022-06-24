@@ -1,0 +1,36 @@
+FROM maven:3.6.0-jdk-11-slim AS MAVEN_BUILD
+
+
+
+COPY . /pre05-team1
+RUN rm -rf /pre05-team1/font_end/repair-motobike-shop
+WORKDIR /pre05-team1/back_end/com.sapo.repair-motobike-shop
+RUN mvn install
+RUN mvn clean package
+WORKDIR /pre05-team1
+FROM openjdk:11-jdk-slim
+
+
+RUN mkdir -p /pre05-team1
+# # WORKDIR /pre05-team1/back_end/com.sapo.repair-motobike-shop
+# RUN mvn clean compile assembly:single
+WORKDIR /pre05-team1
+
+
+COPY --from=MAVEN_BUILD ./pre05-team1/back_end/com.sapo.repair-motobike-shop/target/com.sapo.repair-motobike-shop.jar /demo.jar
+
+#run the spring boot application
+ENTRYPOINT ["java","-jar","/demo.jar"]
+
+# WORKDIR /pre05-team1
+# COPY . .
+# RUN mvn clean install
+# CMD mvn spring-boot:run
+
+
+# FROM maven:3.6.0-jdk-11-slim
+# FROM openjdk:11-jdk-slim
+# RUN mkdir /com.sapo.repair-motobike-shop
+# WORKDIR /com.sapo.repair-motobike-shop
+# COPY . .
+# CMD ["mvn", "spring-boot:run"]
